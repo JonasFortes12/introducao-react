@@ -16104,10 +16104,14 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _greetingJsx = require("./components/Greeting.jsx");
+var _greetingJsxDefault = parcelHelpers.interopDefault(_greetingJsx);
 var _helloJsx = require("./components/Hello.jsx");
 var _helloJsxDefault = parcelHelpers.interopDefault(_helloJsx);
 var _jsxExampleJsx = require("./components/JsxExample.jsx");
 var _jsxExampleJsxDefault = parcelHelpers.interopDefault(_jsxExampleJsx);
+var _welcomeJsx = require("./components/Welcome.jsx");
+var _welcomeJsxDefault = parcelHelpers.interopDefault(_welcomeJsx);
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "App",
@@ -16116,25 +16120,40 @@ function App() {
                 children: "Ol\xe1 mundo"
             }, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 9,
+                lineNumber: 11,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _helloJsxDefault.default), {
                 nome: "CArlos"
             }, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 10,
+                lineNumber: 12,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxExampleJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 11,
+                lineNumber: 13,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _welcomeJsxDefault.default), {
+                nome: "Jonas"
+            }, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 14,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _greetingJsxDefault.default), {
+                name: "Jo\xe3o",
+                age: 25
+            }, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 16,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 7,
+        lineNumber: 9,
         columnNumber: 9
     }, this);
 }
@@ -16147,7 +16166,7 @@ $RefreshReg$(_c, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./components/Hello.jsx":"aRs8i","./components/JsxExample.jsx":"3MFiU"}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./components/Hello.jsx":"aRs8i","./components/JsxExample.jsx":"3MFiU","./components/Welcome.jsx":"gIVXj","./components/Greeting.jsx":"eSRjc"}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -18567,6 +18586,96 @@ $RefreshReg$(_c, "JsxExample");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../style.css":"dRy26"}],"dRy26":[function() {},{}]},["cAXQq","3UcWX"], "3UcWX", "parcelRequire150d", {}, null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../style.css":"dRy26"}],"dRy26":[function() {},{}],"gIVXj":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$9447 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$9447.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9447.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Welcome = ({ nome })=>{
+    const weekday = new Date().toLocaleDateString('pt-BR', {
+        weekday: 'long'
+    });
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: [
+                    "Bem-vindo, ",
+                    nome,
+                    " !"
+                ]
+            }, void 0, true, {
+                fileName: "components/Welcome.jsx",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    "Hoje \xe9 ",
+                    weekday
+                ]
+            }, void 0, true, {
+                fileName: "components/Welcome.jsx",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/Welcome.jsx",
+        lineNumber: 6,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Welcome;
+exports.default = Welcome;
+var _c;
+$RefreshReg$(_c, "Welcome");
+
+  $parcel$ReactRefreshHelpers$9447.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"eSRjc":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$4a3a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$4a3a.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4a3a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Greeting);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function Greeting(props) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+        children: [
+            "Ol\xe1, ",
+            props.name,
+            "! Sua idade \xe9 ",
+            props.age
+        ]
+    }, void 0, true, {
+        fileName: "components/Greeting.jsx",
+        lineNumber: 5,
+        columnNumber: 9
+    }, this);
+}
+_c = Greeting;
+var _c;
+$RefreshReg$(_c, "Greeting");
+
+  $parcel$ReactRefreshHelpers$4a3a.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["cAXQq","3UcWX"], "3UcWX", "parcelRequire150d", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=introducao-react.2e6211d3.js.map
